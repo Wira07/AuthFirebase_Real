@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "590902357519",
+    "project_id": "authfirebase-real",
+    "storage_bucket": "authfirebase-real.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590902357519:android:313020fc81bdcb0080bd7a",
+        "android_client_info": {
+          "package_name": "com.wira_fkom.authfirebase_real"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBew4_fsTBxX5ohkHdyOTv6_ihFuzMx-Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
