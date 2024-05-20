@@ -15,27 +15,34 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         // authentication firebase
         auth = FirebaseAuth.getInstance()
+
         binding.btnRegister.setOnClickListener {
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPassword.text.toString().trim()
+
             if (email.isEmpty()) {
                 binding.etEmail.error = "email tidak boleh kosong!!"
                 binding.etEmail.requestFocus()
                 return@setOnClickListener
             }
+
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 binding.etEmail.error = "email tidak valid!!"
                 binding.etEmail.requestFocus()
                 return@setOnClickListener
             }
+
             if (password.isEmpty() || password.length < 8) {
                 binding.etPassword.error = "password harus lebih dari 8 karakter"
                 binding.etPassword.requestFocus()
                 return@setOnClickListener
             }
+
             registerUser(email, password)
         }
 
@@ -59,8 +66,5 @@ class RegisterActivity : AppCompatActivity() {
                     Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
                 }
             }
-
-
     }
-
 }
