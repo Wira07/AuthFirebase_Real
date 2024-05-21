@@ -21,6 +21,13 @@ class RegisterActivity : AppCompatActivity() {
         // authentication firebase
         auth = FirebaseAuth.getInstance()
 
+        //  Setel onClickListener untuk tombol panah untuk menavigasi ke LoginActivity
+        binding.arrow.setOnClickListener {
+            Intent(this@RegisterActivity, LoginActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
         binding.btnRegister.setOnClickListener {
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPassword.text.toString().trim()
