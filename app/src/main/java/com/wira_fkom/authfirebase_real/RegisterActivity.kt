@@ -18,6 +18,8 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.title = "Halaman Register"
+
         // authentication firebase
         auth = FirebaseAuth.getInstance()
 
