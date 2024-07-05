@@ -6,4 +6,10 @@
     <color name="teal_700">#68007A</color>
     <color name="teal_200">#777777</color>
     <color name="brown">#4CAF50</color>
+    <color name="rippleColor">#03FF72</color>
+    <color name="backgroundColor">#FF5722</color>
+    <color name="mainColor">#FF5722</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="indicatorColor">#03FF72</color>
 </resources>

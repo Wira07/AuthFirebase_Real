@@ -4,6 +4,15 @@
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/brown</item>
         <item name="colorPrimaryDark">@color/brown</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
@@ -12,4 +21,10 @@
     <style name="MyHintTextAppearance" parent="TextAppearance.Design.Hint">
         <item name="android:textSize">10sp</item> <!-- Ukuran teks hint -->
     </style>
+
+    <style name="Base.Theme.AuthFirebase_Real.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>
